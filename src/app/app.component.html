@@ -2,3 +2,16 @@
   {{ currentTemperature | async }}
 </span>
 <input #textfield type="text" id="search">
+
+<div>
+  <h3>Login</h3>
+  <input type="text" [(ngModel)]="username" placeholder="Username">
+  <input type="password " [(ngModel)]="password" placeholder="Password">
+  <button (click)="onLogin()">login</button>
+</div>
+
+<div>
+  <h3>Change Detection</h3>
+  <p>Hello {{ hello.hello }}</p>
+  <button (click)="triggerHello()">Click me!</button>
+</div>
